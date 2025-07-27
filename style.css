@@ -1,0 +1,147 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(44, 47, 72, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+.points-info {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+#question-text .points {
+    display: block;
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 8px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.8rem;
+    color: #f7f7f7;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* Quiz content */
+#choices-list {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#choices-list li {
+    background-color: #3f4261;
+    margin: 10px 0;
+    padding: 14px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+#choices-list li:hover {
+    background-color: #5d6191;
+    transform: scale(1.02);
+}
+
+#choices-list li.selected {
+    background-color: #1cb5e0;
+    color: #000;
+    border-color: #fff;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #1cb5e0, #000851);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+/* Result Text */
+#score-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+/* Utility class */
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
