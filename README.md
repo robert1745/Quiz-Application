@@ -2,6 +2,8 @@
 
 A simple interactive quiz application built with HTML, CSS, and JavaScript. This app allows users to test their general knowledge with a set of questions. Each question carries different points, and the total score is shown at the end.
 
+Live Demo : https://quizfrfr.netlify.app/
+
 ## 🚀 Features
 
 - Score tracking with individual question points
